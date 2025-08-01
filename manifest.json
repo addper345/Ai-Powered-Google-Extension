@@ -1,9 +1,13 @@
 {
   "manifest_version": 3,
-  "name": "Reading time",
+  "name": "AI Advice Assistant",
+  "description": "Paste text and get AI advice on click.",
   "version": "1.0",
-  "description": "Add the reading time to Chrome Extension documentation articles",
+  "permissions": ["scripting"],
   "action": {
-    "default_popup": "extension.html"
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "service_worker.js"
   }
 }
